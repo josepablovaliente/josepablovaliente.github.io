@@ -1,0 +1,11 @@
+Imágenes del sitio. Si falta alguna, se muestra un ícono en su lugar.
+En GitHub los nombres distinguen mayúsculas: usá siempre minúsculas y sin espacios.
+
+Logos / foto:
+  avatar.jpg (recorte de profile.jpg), vana.png, canella.png, usac.png, elim.jpg,
+  scrum.png, cisco.png, academia-europea.jpg
+  Sin logo (ícono): jaguar.png, neginsa.png, mspas.png
+
+galeria/  → documentos que se muestran en galeria.html (JPG, máx. 1600 px).
+  Para agregar uno: guardalo aquí y copiá un bloque <button class="gallery-item"> en galeria.html.
+  Originales sin comprimir: ~/Downloads/CV/galeria-originales (no se suben).
