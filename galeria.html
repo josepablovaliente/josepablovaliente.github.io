@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de documentos - José Pablo Valiente Montes</title>
+  <meta name="description" content="Reconocimientos, certificaciones y constancias que respaldan el CV de José Pablo Valiente Montes.">
+  <meta property="og:title" content="Galería de documentos - José Pablo Valiente Montes">
+  <meta property="og:image" content="https://josepablovaliente.github.io/images/avatar.jpg">
+  <meta property="og:url" content="https://josepablovaliente.github.io/galeria.html">
+  <link rel="canonical" href="https://josepablovaliente.github.io/galeria.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body id="top">
+  <nav class="navbar navbar-dark sticky-nav" aria-label="Menú principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">José Pablo Valiente</a>
+      <div class="d-flex align-items-center gap-2">
+        <a class="btn btn-link nav-dark-toggle text-decoration-none" href="index.html" aria-label="Volver al CV"><i class="fas fa-arrow-left me-1"></i><span class="d-none d-sm-inline" style="font-size:14.5px">Volver al CV</span></a>
+        <button class="btn btn-link nav-dark-toggle" type="button" aria-label="Cambiar tema"><i class="fas fa-sun"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="cover">
+        <header class="cover-bg px-3 px-lg-4" style="padding-top:56px;padding-bottom:36px">
+          <div class="row w-100 mx-0">
+            <div class="col">
+              <h1 class="hero-title">Galería de documentos</h1>
+              <p class="hero-subtitle mb-0">Reconocimientos, certificaciones y cursos que respaldan mi CV.</p>
+            </div>
+          </div>
+        </header>
+
+        <section class="section" aria-label="Documentos">
+          <div class="gallery-filters" role="group" aria-label="Filtrar documentos">
+            <button class="gallery-filter active" type="button" data-filter="all">Todos</button>
+            <button class="gallery-filter" type="button" data-filter="reconocimiento">Reconocimientos</button>
+            <button class="gallery-filter" type="button" data-filter="certificacion">Certificaciones y cursos</button>
+            <button class="gallery-filter" type="button" data-filter="congreso">Congresos</button>
+          </div>
+
+          <div class="gallery-grid" id="galleryGrid">
+            <button class="gallery-item" type="button" id="ucenm" data-cat="reconocimiento"
+                    data-src="images/galeria/ucenm-reconocimiento-2026.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/ucenm-reconocimiento-2026.jpg" alt="Reconocimiento de la UCENM por exposición magistral en conferencia de robótica" loading="lazy" style="object-position:center 25%"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Reconocimiento</span>
+                <strong>Exposición magistral en conferencia de robótica</strong>
+                <span>UCENM · Gracias, Lempira, Honduras · 21 Mar 2026</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="usac-tjr" data-cat="reconocimiento"
+                    data-src="images/galeria/usac-reconocimiento-tjr-2021.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/usac-reconocimiento-tjr-2021.jpg" alt="Diploma de reconocimiento USAC por participación en el Torneo de Robótica TJR" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Reconocimiento</span>
+                <strong>Representación académica internacional: Torneo de Robótica TJR</strong>
+                <span>USAC · Cooperación y Relaciones Internacionales · 29 Nov 2021</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="scrum" data-cat="certificacion"
+                    data-src="images/galeria/scrum-team-member-2023.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/scrum-team-member-2023.jpg" alt="Certificado Registered Scrum Team Member" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Certificación</span>
+                <strong>Registered Scrum Team Member™</strong>
+                <span>Agile Education by Scrum Inc. · ID RSTM-0482595 · 17 Jul 2023</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="congreso" data-cat="congreso"
+                    data-src="images/galeria/congreso-latinoamericano-2020.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/congreso-latinoamericano-2020.jpg" alt="Certificado del VI Congreso Latinoamericano de Ingeniería de Sistemas e Informática" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Congreso</span>
+                <strong>VI Congreso Latinoamericano de Ingeniería de Sistemas e Informática</strong>
+                <span>Ecuador, modalidad online · 40 horas académicas · Oct 2020</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="academia-europea" data-cat="certificacion"
+                    data-src="images/galeria/academia-europea-ingles-2023.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/academia-europea-ingles-2023.jpg" alt="Diploma de Academia Europea, nivel básico de inglés" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Curso</span>
+                <strong>Inglés, nivel básico</strong>
+                <span>Academia Europea · AE Virtual Class · 30 Ene 2023</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="cisco-smb" data-cat="certificacion"
+                    data-src="images/galeria/cisco-ccna-smb-isp-2011.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/cisco-ccna-smb-isp-2011.jpg" alt="Certificado Cisco CCNA Discovery: Working at a Small-to-Medium Business or ISP" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Curso</span>
+                <strong>CCNA Discovery: Working at a Small-to-Medium Business or ISP</strong>
+                <span>Cisco Networking Academy · Colegio Cristiano Elim · 27 Sep 2011</span>
+              </div>
+            </button>
+
+            <button class="gallery-item" type="button" id="cisco-home" data-cat="certificacion"
+                    data-src="images/galeria/cisco-ccna-home-2010.jpg">
+              <div class="gallery-thumb"><img src="images/galeria/cisco-ccna-home-2010.jpg" alt="Certificado Cisco CCNA Discovery: Networking for Home and Small Businesses" loading="lazy"></div>
+              <div class="gallery-caption">
+                <span class="badge-program">Curso</span>
+                <strong>CCNA Discovery: Networking for Home and Small Businesses</strong>
+                <span>Cisco Networking Academy · Colegio Cristiano Elim · 2 Dic 2010</span>
+              </div>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" style="padding-bottom:30px">
+    <div class="container text-center">
+      <p class="mb-0">© <span id="footer-year">2026</span> José Pablo Valiente Montes · <a href="index.html">Volver al CV</a></p>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de documento">
+    <button class="lightbox-btn lightbox-close" type="button" aria-label="Cerrar"><i class="fas fa-xmark"></i></button>
+    <button class="lightbox-btn lightbox-prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-btn lightbox-next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script>
+    // Tema claro/oscuro (mismo comportamiento que el CV).
+    (function () {
+      var root = document.documentElement;
+      function current() { return root.getAttribute('data-theme') || 'dark'; }
+      function paint() {
+        document.querySelectorAll('button.nav-dark-toggle i').forEach(function (i) {
+          i.className = 'fas ' + (current() === 'dark' ? 'fa-sun' : 'fa-moon');
+        });
+      }
+      document.querySelectorAll('button.nav-dark-toggle').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          paint();
+        });
+      });
+      paint();
+    })();
+
+    // Filtros por categoría.
+    var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+    document.querySelectorAll('.gallery-filter').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.gallery-filter').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var f = btn.getAttribute('data-filter');
+        items.forEach(function (it) {
+          it.classList.toggle('hidden', f !== 'all' && it.getAttribute('data-cat') !== f);
+        });
+      });
+    });
+
+    // Visor: abrir, cerrar, navegar con flechas y teclado.
+    var box = document.getElementById('lightbox'), img = document.getElementById('lightboxImg'),
+        cap = document.getElementById('lightboxCaption'), idx = 0, lastFocus = null;
+    function visible() { return items.filter(function (it) { return !it.classList.contains('hidden'); }); }
+    function show(i) {
+      var list = visible(); if (!list.length) return;
+      idx = (i + list.length) % list.length;
+      var it = list[idx];
+      img.src = it.getAttribute('data-src');
+      img.alt = it.querySelector('img').alt;
+      cap.innerHTML = '<strong>' + it.querySelector('strong').textContent + '</strong>' +
+                      it.querySelector('.gallery-caption span:last-child').textContent;
+    }
+    function open(it) {
+      lastFocus = document.activeElement;
+      show(visible().indexOf(it));
+      box.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      box.querySelector('.lightbox-close').focus();
+    }
+    function close() {
+      box.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+      if (location.hash) history.replaceState(null, '', location.pathname);
+    }
+    items.forEach(function (it) { it.addEventListener('click', function () { open(it); }); });
+    box.querySelector('.lightbox-close').addEventListener('click', close);
+    box.querySelector('.lightbox-prev').addEventListener('click', function () { show(idx - 1); });
+    box.querySelector('.lightbox-next').addEventListener('click', function () { show(idx + 1); });
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!box.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+
+    // Si se llega desde el CV con #documento, se abre directamente.
+    if (location.hash) {
+      var target = document.getElementById(location.hash.slice(1));
+      if (target && target.classList.contains('gallery-item')) { window.scrollTo(0, 0); open(target); }
+    }
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

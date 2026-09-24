@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>José Pablo Valiente Montes - Support Engineer</title>
+  <meta name="description" content="Support Engineer en Vana. Investigación de causa raíz en plataformas serverless AWS, soporte de producción en 4 países, desarrollo de software y robótica.">
+  <meta name="author" content="José Pablo Valiente Montes">
+
+  <!-- Vista previa al compartir en LinkedIn / WhatsApp -->
+  <meta property="og:title" content="José Pablo Valiente Montes - Support Engineer">
+  <meta property="og:description" content="Soporte de producción y causa raíz en AWS Serverless · Desarrollo de software · Robótica e IoT.">
+  <meta property="og:image" content="https://josepablovaliente.github.io/images/avatar.jpg">
+  <meta property="og:url" content="https://josepablovaliente.github.io/">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://josepablovaliente.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José Pablo Valiente Montes",
+    "jobTitle": "Support Engineer",
+    "worksFor": { "@type": "Organization", "name": "Vana" },
+    "url": "https://josepablovaliente.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Guatemala", "addressCountry": "GT" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de San Carlos de Guatemala" },
+    "sameAs": ["https://www.linkedin.com/in/jose-pablo-valiente-montes", "https://github.com/josepablovaliente"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body id="top">
+  <div class="scroll-progress d-print-none" id="scrollProgress" role="progressbar" aria-label="Progreso de lectura"></div>
+  <a class="skip-to-content" href="#about">Ir al contenido</a>
+
+  <!-- ================= Menú ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-nav d-print-none" aria-label="Menú principal">
+    <div class="container">
+      <a class="navbar-brand" href="#top">José Pablo Valiente</a>
+      <div class="d-flex align-items-center ms-auto d-lg-none">
+        <button class="btn btn-link nav-dark-toggle me-2" type="button" aria-label="Cambiar tema"><i class="fas fa-sun"></i></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Aptitudes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">Certificaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#volunteer">Voluntariado</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item nav-contact-pill"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contacto</a></li>
+          <li class="nav-item d-none d-lg-block">
+            <button class="btn btn-link nav-dark-toggle" type="button" aria-label="Cambiar tema"><i class="fas fa-sun"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="cover">
+
+        <!-- ================= Portada ================= -->
+        <header class="cover-bg px-3 px-lg-4">
+          <div class="row w-100 mx-0">
+            <div class="col-lg-4 col-md-5">
+              <div class="avatar">
+                <!-- Poné tu foto en images/avatar.jpg (cuadrada, ~600x600) -->
+                <img src="images/avatar.jpg" width="200" height="200" alt="José Pablo Valiente Montes"
+                     data-fallback="JP" data-fallback-class="avatar-fallback">
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7 text-center text-md-start">
+              <h1 class="hero-title" data-aos="fade-left">José Pablo Valiente Montes</h1>
+              <p class="hero-subtitle" data-aos="fade-left" data-aos-delay="100">
+                Support Engineer · Soporte de producción y desarrollo de software
+              </p>
+              <p class="hero-tagline" data-aos="fade-left" data-aos-delay="150">
+                <span id="typed-output"></span>
+              </p>
+              <p class="print-contact">
+                Guatemala · jpablo15351@gmail.com · linkedin.com/in/jose-pablo-valiente-montes · josepablovaliente.github.io
+              </p>
+              <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
+                <a class="btn btn-hero-pill mt-1 me-1" href="cv.pdf" target="_blank" rel="noopener">
+                  <i class="fas fa-download me-1"></i>Descargar CV
+                </a>
+                <a class="btn btn-hero-ghost mt-1 me-1" href="#contact">
+                  <i class="fas fa-envelope me-1"></i>Contactame
+                </a>
+                <span class="hero-social-icons">
+                  <a href="https://www.linkedin.com/in/jose-pablo-valiente-montes" title="LinkedIn" target="_blank" rel="noopener" aria-label="Perfil de LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/josepablovaliente" title="GitHub" target="_blank" rel="noopener" aria-label="Perfil de GitHub"><i class="fab fa-github"></i></a>
+                  <a href="mailto:jpablo15351@gmail.com" title="Correo" aria-label="Enviar correo"><i class="fas fa-envelope"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- ================= Sobre mí ================= -->
+        <section class="section" id="about" aria-label="Sobre mí">
+          <h2 class="section-heading" data-aos="fade-right"><i class="fas fa-user"></i>Sobre mí</h2>
+          <ul class="nav nav-tabs about-tabs mb-3" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-es" data-bs-toggle="tab" data-bs-target="#about-es" type="button" role="tab" aria-controls="about-es" aria-selected="true">🇬🇹 Español</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-en" data-bs-toggle="tab" data-bs-target="#about-en" type="button" role="tab" aria-controls="about-en" aria-selected="false">🇬🇧 English</button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="about-es" role="tabpanel" aria-labelledby="tab-es">
+              <p>
+                Soy Support Engineer especializado en <strong>soporte de producción e investigación de causa raíz</strong>
+                en plataformas serverless sobre AWS, con formación en Ingeniería en Ciencias y Sistemas en la
+                Universidad de San Carlos de Guatemala.
+              </p>
+              <p>
+                Actualmente trabajo como <strong>Support Engineer en Vana</strong>, una fintech de crédito digital que opera
+                en Guatemala, República Dominicana, Honduras y Perú. Rastreo cada incidente de punta a punta: desde la app móvil
+                y web hasta los microservicios, los eventos y las bases de datos. Mi trabajo es convertir los reportes de los
+                usuarios en hallazgos verificados que los equipos de desarrollo puedan usar para corregir el problema.
+              </p>
+              <p>
+                Antes fui <strong>Líder de Equipo en Canella, S.A.</strong> en el desarrollo de la
+                <strong>banca virtual de Banco Industrial</strong> (Bi en Línea), trabajando con .NET, servicios REST y SQL Server bajo Scrum.
+              </p>
+              <p>
+                Vengo del mundo de la <strong>robótica y la fabricación digital</strong>: fui auxiliar en el Fab-Lab y en la Dirección
+                General de Investigación de la USAC, y mi equipo ganó el <strong>2.º lugar latinoamericano</strong> en el TJR 2021.
+                Esa formación me dejó una forma de trabajar muy práctica: entender cómo funciona el sistema completo antes de tocar una pieza.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="about-en" role="tabpanel" aria-labelledby="tab-en">
+              <p>
+                I'm a Support Engineer specialized in <strong>production support and root-cause analysis</strong> on AWS
+                serverless platforms, with a background in Computer Science and Systems Engineering from Universidad de San Carlos de Guatemala.
+              </p>
+              <p>
+                I currently work as a <strong>Support Engineer at Vana</strong>, a digital lending fintech operating in Guatemala,
+                the Dominican Republic, Honduras and Peru. I trace each incident end to end, from the mobile and web apps down to
+                the microservices, events and databases, and turn user reports into verified findings that development teams can act on.
+              </p>
+              <p>
+                Previously I was a <strong>Team Lead at Canella, S.A.</strong>, working on
+                <strong>Banco Industrial's online banking</strong> platform (Bi en Línea) with .NET, REST services and SQL Server under Scrum.
+              </p>
+              <p>
+                My background is in <strong>robotics and digital fabrication</strong>: I was an assistant at USAC's Fab-Lab and
+                Research Directorate, and my team won <strong>2nd place in Latin America</strong> at TJR 2021. That background taught me
+                to understand the whole system before touching any single part.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cifras destacadas -->
+        <div class="key-highlights">
+          <div class="row text-center g-3">
+            <div class="col-6 col-md-3" data-aos="fade-up">
+              <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="highlight-number"><span class="countup-number" data-end="5">5</span>+</div>
+              <div class="highlight-label">Años en software y cloud</div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="highlight-icon"><i class="fas fa-network-wired"></i></div>
+              <div class="highlight-number"><span class="countup-number" data-end="15">15</span>+</div>
+              <div class="highlight-label">Microservicios analizados a nivel de código</div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="highlight-icon"><i class="fas fa-globe-americas"></i></div>
+              <div class="highlight-number"><span class="countup-number" data-end="4">4</span></div>
+              <div class="highlight-label">Países con soporte en producción</div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="highlight-icon"><i class="fas fa-trophy"></i></div>
+              <div class="highlight-number"><span class="countup-number" data-end="2">2</span>.º</div>
+              <div class="highlight-label">Lugar latinoamericano en robótica (TJR 2021)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Aptitudes ================= -->
+        <section class="section section-alt" id="skills" aria-label="Aptitudes">
+          <h2 class="section-heading" data-aos="fade-right"><i class="fas fa-tools"></i>Aptitudes profesionales</h2>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-cloud"></i>Cloud &amp; Serverless (AWS)</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+                  <span class="skill-tag"><i class="fas fa-bolt"></i> Lambda</span>
+                  <span class="skill-tag"><i class="devicon-dynamodb-plain colored"></i> DynamoDB</span>
+                  <span class="skill-tag"><i class="fas fa-random"></i> EventBridge</span>
+                  <span class="skill-tag"><i class="fas fa-chart-area"></i> CloudWatch</span>
+                  <span class="skill-tag"><i class="fas fa-search"></i> Athena</span>
+                  <span class="skill-tag"><i class="fas fa-box-archive"></i> S3</span>
+                  <span class="skill-tag"><i class="fas fa-user-shield"></i> Cognito</span>
+                  <span class="skill-tag"><i class="fas fa-door-open"></i> API Gateway</span>
+                  <span class="skill-tag"><i class="fas fa-layer-group"></i> SAM / CloudFormation</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-stethoscope"></i>Soporte de producción</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="fas fa-magnifying-glass-chart"></i> Análisis de causa raíz</span>
+                  <span class="skill-tag"><i class="fas fa-bug"></i> Debugging full-stack</span>
+                  <span class="skill-tag"><i class="fas fa-eye"></i> Observabilidad</span>
+                  <span class="skill-tag"><i class="fas fa-database"></i> Forense de datos</span>
+                  <span class="skill-tag"><i class="fas fa-screwdriver-wrench"></i> Corrección de datos</span>
+                  <span class="skill-tag"><i class="fas fa-file-lines"></i> Documentación técnica</span>
+                  <span class="skill-tag"><i class="fas fa-people-arrows"></i> Puente Ops ↔ Dev</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-code"></i>Lenguajes</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                  <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                  <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                  <span class="skill-tag"><i class="devicon-go-original-wordmark colored"></i> Go</span>
+                  <span class="skill-tag"><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+                  <span class="skill-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+                  <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+                  <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                  <span class="skill-tag"><i class="fas fa-table"></i> SQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-cubes"></i>Frameworks &amp; Web</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                  <span class="skill-tag"><i class="devicon-react-original colored"></i> React</span>
+                  <span class="skill-tag"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                  <span class="skill-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET / ASP.NET MVC</span>
+                  <span class="skill-tag"><i class="devicon-flask-original"></i> Flask</span>
+                  <span class="skill-tag"><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+                  <span class="skill-tag"><i class="devicon-materialui-plain colored"></i> Material UI</span>
+                  <span class="skill-tag"><i class="fas fa-plug"></i> APIs REST</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-database"></i>Datos &amp; Analítica</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-dynamodb-plain colored"></i> DynamoDB</span>
+                  <span class="skill-tag"><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</span>
+                  <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                  <span class="skill-tag"><i class="devicon-oracle-original colored"></i> Oracle</span>
+                  <span class="skill-tag"><i class="devicon-mariadb-plain colored"></i> MariaDB</span>
+                  <span class="skill-tag"><i class="fas fa-chart-pie"></i> Segment / Mixpanel</span>
+                  <span class="skill-tag"><i class="fas fa-dog"></i> Datadog</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-toolbox"></i>Herramientas</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+                  <span class="skill-tag"><i class="devicon-github-original"></i> GitHub</span>
+                  <span class="skill-tag"><i class="devicon-jira-plain colored"></i> Jira</span>
+                  <span class="skill-tag"><i class="devicon-postman-plain colored"></i> Postman</span>
+                  <span class="skill-tag"><i class="devicon-azuredevops-plain colored"></i> Azure DevOps</span>
+                  <span class="skill-tag"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                  <span class="skill-tag"><i class="devicon-linux-plain"></i> Linux</span>
+                  <span class="skill-tag"><i class="fas fa-robot"></i> Claude Code / IA</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-microchip"></i>Hardware &amp; Robótica</div>
+                <div class="skill-tags">
+                  <span class="skill-tag"><i class="devicon-arduino-plain colored"></i> Microcontroladores</span>
+                  <span class="skill-tag"><i class="fas fa-bolt"></i> Electrónica</span>
+                  <span class="skill-tag"><i class="fas fa-robot"></i> Robótica</span>
+                  <span class="skill-tag"><i class="fas fa-cube"></i> Impresión 3D</span>
+                  <span class="skill-tag"><i class="fas fa-gears"></i> CNC</span>
+                  <span class="skill-tag"><i class="devicon-blender-original colored"></i> Modelado 3D</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-category">
+                <div class="skill-category-title"><i class="fas fa-language"></i>Idiomas y metodologías</div>
+                <div class="skill-tags">
+                  <span class="skill-tag">🇬🇹 Español: nativo</span>
+                  <span class="skill-tag">🇬🇧 Inglés: básico</span>
+                  <span class="skill-tag"><i class="fas fa-arrows-rotate"></i> Scrum</span>
+                  <span class="skill-tag"><i class="fas fa-people-group"></i> Liderazgo de equipo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Experiencia ================= -->
+        <section class="section" id="experience" aria-label="Experiencia laboral">
+          <h2 class="section-heading section-toggle" data-target="experienceContent" data-aos="fade-right">
+            <i class="fas fa-briefcase"></i>Experiencia laboral<span class="toggle-icon">▼</span>
+          </h2>
+          <div id="experienceContent" class="timeline collapsible-content">
+
+            <div class="timeline-card timeline-card-current card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/vana.png" alt="Vana" class="logo" data-fallback="fa-building">
+                  <div>
+                    <div class="card-title-text">Support Engineer <span class="badge-current">Actual</span>
+                      <span class="card-org">Vana · Remoto, Guatemala</span>
+                    </div>
+                    <div class="card-date">Feb 2024 – Actualidad</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Investigo la <strong>causa raíz de incidentes en producción</strong> de la app móvil y web reportados por Operaciones en <strong>4 países</strong>, analizando el comportamiento de los sistemas de punta a punta.</li>
+                  <li><strong>Diagnóstico basado en datos reales de producción</strong> para reconstruir la línea de tiempo de cada caso y separar la causa real de los síntomas reportados.</li>
+                  <li>Documento <strong>hallazgos verificados con evidencia</strong> y cadena causal para los equipos de desarrollo, en flujos críticos de negocio: créditos, pagos, desembolsos, billetera y autenticación.</li>
+                  <li>Desarrollo <strong>scripts de corrección de datos</strong> con respaldo previo, modo de prueba (<em>dry-run</em>) y validaciones de seguridad antes de modificar registros productivos.</li>
+                  <li>Construí un <strong>dashboard de métricas</strong> para el equipo de Production Support: tiempos por estado, rendimiento del equipo y calidad del flujo de tickets.</li>
+                  <li>Diseñé una <strong>base de conocimiento asistida por IA</strong> para agilizar el diagnóstico de incidentes, que permite a los ingenieros consultar el comportamiento de los sistemas sin revisar el código a mano.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/canella.png" alt="Canella" class="logo" data-fallback="fa-building">
+                  <div>
+                    <div class="card-title-text">Líder de Equipo
+                      <span class="card-org">Canella, S.A. · Soluciones TI Corporativas, unidad de desarrollo · Remoto, Guatemala</span>
+                    </div>
+                    <div class="card-date">Jun 2022 – Feb 2024</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li><strong>Dirección de proyectos</strong> y liderazgo del equipo dentro de la unidad de desarrollo.</li>
+                  <li>Responsable de las líneas <strong>Híbrida-5, Bel-Web-10 y Bel-Web-2</strong> en el desarrollo de la banca virtual de <strong>Banco Industrial</strong> (Bi en Línea) y del back-end de la app móvil <strong>Bi en Línea APP</strong>.</li>
+                  <li>Desarrollo de aplicaciones web con <strong>.NET (C#, ASP.NET MVC), servicios REST y SQL Server</strong>.</li>
+                  <li>Coordinación del equipo bajo <strong>Scrum</strong>: planificación de sprints, seguimiento en Jira y revisión de entregables.</li>
+                  <li>Resolución de problemas técnicos complejos, reconocida en la carta de recomendación de la gerencia de desarrollo.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="USAC" class="logo" data-fallback="fa-university">
+                  <div>
+                    <div class="card-title-text">Auxiliar de Investigación
+                      <span class="card-org">Dirección General de Investigación (DIGI), USAC</span>
+                    </div>
+                    <div class="card-date">Ene 2021 – Feb 2022</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Desarrollo del <strong>firmware y software</strong> de un prototipo de robot móvil agrícola (Proyecto DES-12 "Farmbot").</li>
+                  <li>Diseño de la <strong>aplicación web de control</strong> del robot y de su red local.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="Fab-Lab USAC" class="logo" data-fallback="fa-cube">
+                  <div>
+                    <div class="card-title-text">Auxiliar de Laboratorio
+                      <span class="card-org">Laboratorio de Innovación Fab-Lab, USAC</span>
+                    </div>
+                    <div class="card-date">Ene 2020 – Feb 2022</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Apoyo en la fabricación de prototipos con <strong>impresoras 3D, CNC láser CO₂</strong> y herramientas eléctricas.</li>
+                  <li>Desarrollo de software para proyectos del laboratorio.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/jaguar.png" alt="Jaguar, INC" class="logo" data-fallback="fa-code">
+                  <div>
+                    <div class="card-title-text">Front-end Developer
+                      <span class="card-org">Jaguar, INC · Contrato temporal</span>
+                    </div>
+                    <div class="card-date">Oct 2020</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Desarrollo del front-end del sitio web con <strong>React y Material UI</strong>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/neginsa.png" alt="NEGINSA" class="logo" data-fallback="fa-clipboard-check">
+                  <div>
+                    <div class="card-title-text">Control de Calidad
+                      <span class="card-org">NEGINSA, S.A.</span>
+                    </div>
+                    <div class="card-date">Feb 2016 – Nov 2016</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Control de calidad de productos en órdenes despachadas.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Educación ================= -->
+        <section class="section section-alt" id="education" aria-label="Educación">
+          <h2 class="section-heading section-toggle" data-target="educationContent" data-aos="fade-right">
+            <i class="fas fa-graduation-cap"></i>Educación<span class="toggle-icon">▼</span>
+          </h2>
+          <div id="educationContent" class="timeline collapsible-content">
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="USAC" class="logo" data-fallback="fa-university">
+                  <div>
+                    <div class="card-title-text">Estudios en Ingeniería en Ciencias y Sistemas
+                      <span class="card-org">Universidad de San Carlos de Guatemala · Facultad de Ingeniería</span>
+                    </div>
+                    <div class="text-muted mt-1">Formación en desarrollo de software, bases de datos, redes y sistemas.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/elim.jpg" alt="Colegio Cristiano Elim" class="logo" data-fallback="fa-school">
+                  <div>
+                    <div class="card-title-text">Bachillerato en Computación con Orientación Científica
+                      <span class="card-org">Colegio Cristiano Elim</span>
+                    </div>
+                    <div class="card-date">2010 – 2011</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Certificaciones ================= -->
+        <section class="section" id="certs" aria-label="Certificaciones y reconocimientos">
+          <h2 class="section-heading section-toggle" data-target="certsContent" data-aos="fade-right">
+            <i class="fas fa-certificate"></i>Certificaciones y reconocimientos<span class="toggle-icon">▼</span>
+          </h2>
+          <div id="certsContent" class="timeline collapsible-content">
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/scrum.png" alt="Scrum Inc." class="logo" data-fallback="fa-arrows-rotate">
+                  <div>
+                    <div class="card-title-text"><span class="badge-program">Certificación</span> Registered Scrum Team Member™
+                      <span class="card-org">Agile Education by Scrum Inc.™ · ID RSTM-0482595</span>
+                    </div>
+                    <div class="card-date">Jul 2023</div>
+                  </div>
+                </div>
+                <a class="doc-link" href="galeria.html#scrum"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="USAC" class="logo" data-fallback="fa-medal">
+                  <div>
+                    <div class="card-title-text"><span class="badge-program">Reconocimiento</span> Representación académica a nivel internacional
+                      <span class="card-org">USAC · Coordinadora General de Cooperación y Relaciones Internacionales</span>
+                    </div>
+                    <div class="card-date">Nov 2021</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Por la destacada participación en el Torneo de Robótica TJR, realizado en Brasil en modalidad virtual.</li>
+                </ul>
+                <a class="doc-link" href="galeria.html#usac-tjr"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="USAC" class="logo" data-fallback="fa-award">
+                  <div>
+                    <div class="card-title-text"><span class="badge-program">Beca</span> VI Congreso Latinoamericano de Ingeniería de Sistemas e Informática
+                      <span class="card-org">Participación becada · Ecuador, modalidad online · 40 horas académicas</span>
+                    </div>
+                    <div class="card-date">Oct 2020</div>
+                  </div>
+                </div>
+                <a class="doc-link" href="galeria.html#congreso"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/cisco.png" alt="Cisco Networking Academy" class="logo" data-fallback="fa-network-wired">
+                  <div>
+                    <div class="card-title-text"><span class="badge-program">Curso</span> CCNA Discovery
+                      <span class="card-org">Cisco Networking Academy · Colegio Cristiano Elim</span>
+                    </div>
+                    <div class="card-date">2010 – 2011</div>
+                  </div>
+                </div>
+                <ul class="card-details">
+                  <li>Networking for Home and Small Businesses (Dic 2010)</li>
+                  <li>Working at a Small-to-Medium Business or ISP (Sep 2011)</li>
+                </ul>
+                <a class="doc-link" href="galeria.html#cisco-home"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/academia-europea.jpg" alt="Academia Europea de Guatemala" class="logo" data-fallback="fa-language">
+                  <div>
+                    <div class="card-title-text"><span class="badge-program">Idioma</span> Inglés, nivel básico
+                      <span class="card-org">Academia Europea · AE Virtual Class</span>
+                    </div>
+                    <div class="card-date">Ene 2023</div>
+                  </div>
+                </div>
+                <a class="doc-link" href="galeria.html#academia-europea"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Proyectos ================= -->
+        <section class="section section-alt" id="projects" aria-label="Proyectos y logros">
+          <h2 class="section-heading section-toggle" data-target="projectsContent" data-aos="fade-right">
+            <i class="fas fa-rocket"></i>Proyectos y logros<span class="toggle-icon">▼</span>
+          </h2>
+          <div id="projectsContent" class="timeline collapsible-content">
+            <div class="timeline-card timeline-card-current card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text"><span class="badge-program">Exposición magistral</span> Conferencia de robótica
+                  <span class="card-org">Universidad Cristiana Evangélica Nuevo Milenio (UCENM) · Gracias, Lempira, Honduras</span>
+                </div>
+                <div class="card-date mb-1">21 Mar 2026</div>
+                <ul class="card-details">
+                  <li>Reconocimiento de la universidad por la contribución y la exposición magistral en su conferencia de robótica.</li>
+                </ul>
+                <a class="doc-link" href="galeria.html#ucenm"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">TJR 2021: robot autónomo de competencia <span class="badge-award"><i class="fas fa-trophy me-1"></i>2.º lugar Latinoamérica</span>
+                  <span class="card-org">Universidad de San Carlos de Guatemala · Equipo de 3 integrantes · Brasil, modalidad virtual</span>
+                </div>
+                <div class="card-date mb-1">Mar 2021 – Ago 2021</div>
+                <ul class="card-details">
+                  <li>Robot capaz de recorrer un circuito de forma autónoma y evadir obstáculos en el menor tiempo posible.</li>
+                </ul>
+                <a class="doc-link" href="galeria.html#usac-tjr"><i class="fas fa-file-image"></i>Ver documento</a>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Farmbot: robot móvil multifuncional agrícola (DES-12)
+                  <span class="card-org">Dirección General de Investigación, USAC</span>
+                </div>
+                <div class="card-date mb-1">Ene 2021 – Feb 2022</div>
+                <ul class="card-details">
+                  <li>Prototipo para apoyar actividades agrícolas repetitivas: firmware, aplicación web de control y red local del robot.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Dashboard de Production Support
+                  <span class="card-org">Vana · Herramienta interna</span>
+                </div>
+                <div class="card-date mb-1">2026</div>
+                <ul class="card-details">
+                  <li>Métricas de tickets del equipo: KPIs, tiempo por estado, rendimiento del equipo y calidad del flujo.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Asistente de IA para diagnóstico de incidentes
+                  <span class="card-org">Vana · Herramienta interna</span>
+                </div>
+                <div class="card-date mb-1">2026</div>
+                <ul class="card-details">
+                  <li>Base de conocimiento para que los ingenieros consulten el comportamiento de los sistemas sin revisar el código a mano.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Jaguar E1: impresora 3D de bajo costo
+                  <span class="card-org">Proyecto personal</span>
+                </div>
+                <ul class="card-details">
+                  <li>Diseño y construcción de una impresora 3D FDM de bajo costo.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Estación de sanitización
+                  <span class="card-org">Proyecto IEEE</span>
+                </div>
+                <ul class="card-details">
+                  <li>Programación del microcontrolador para el control de sensores, luces y bomba en una estación de sanitización para la entrada de edificios concurridos.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text">Escudos faciales
+                  <span class="card-org">Guateplast / USAC · Iniciativa público-privada</span>
+                </div>
+                <ul class="card-details">
+                  <li>Modelado 3D de escudos faciales durante la pandemia.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-title-text"><span class="badge-program">Conferencias</span> Conferencias impartidas
+                  <span class="card-org">Escuela de Ciencias y Sistemas, Facultad de Ingeniería, USAC</span>
+                </div>
+                <ul class="card-details">
+                  <li>Desarrollo de proyectos técnicos a través de máquinas de control numérico. Marzo 2021.</li>
+                  <li>Protocolos de comunicación utilizados en robótica e IoT. Abril 2022.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Voluntariado ================= -->
+        <section class="section" id="volunteer" aria-label="Voluntariado">
+          <h2 class="section-heading section-toggle" data-target="volunteerContent" data-aos="fade-right">
+            <i class="fas fa-hands-helping"></i>Voluntariado<span class="toggle-icon">▼</span>
+          </h2>
+          <div id="volunteerContent" class="timeline collapsible-content">
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/usac.png" alt="Fab-Lab USAC" class="logo" data-fallback="fa-cube">
+                  <div>
+                    <div class="card-title-text">Auxiliar de laboratorio
+                      <span class="card-org">FabLab-USAC · Ciencia y tecnología</span>
+                    </div>
+                    <div class="card-date">Ene 2020 – Actualidad</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-card card" data-aos="fade-up">
+              <div class="card-body">
+                <div class="card-head">
+                  <img src="images/mspas.png" alt="Ministerio de Salud" class="logo" data-fallback="fa-heart-pulse">
+                  <div>
+                    <div class="card-title-text">Digitador
+                      <span class="card-org">Ministerio de Salud Pública de Guatemala · Salud</span>
+                    </div>
+                    <div class="card-date">May 2021 – Nov 2021</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Galería ================= -->
+        <div class="section gallery-cta-section d-print-none" data-aos="fade-up">
+          <a href="galeria.html" class="gallery-cta-card">
+            <div class="gallery-cta-icon"><i class="fas fa-images"></i></div>
+            <div class="gallery-cta-text">
+              <h3>Galería de documentos</h3>
+              <p>Reconocimientos, certificaciones y cursos que respaldan este CV</p>
+            </div>
+            <div class="gallery-cta-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ================= Contacto ================= -->
+        <section class="section section-alt contact-section d-print-none" id="contact" aria-label="Contacto">
+          <h2 class="section-heading" data-aos="fade-right"><i class="fas fa-paper-plane"></i>Contacto</h2>
+          <div class="row g-4" data-aos="fade-up">
+            <div class="col-md-7">
+              <!-- EDITAR: reemplazá TU_ID_FORMSPREE por el ID de tu formulario (ver guía). Mientras no lo cambies, el botón abre tu correo. -->
+              <form id="contactForm" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST" data-mailto="jpablo15351@gmail.com" aria-label="Formulario de contacto">
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <label for="name" class="visually-hidden">Tu nombre</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="email" class="visually-hidden">Tu correo</label>
+                    <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu correo" required>
+                  </div>
+                </div>
+                <div class="my-2">
+                  <label for="message" class="visually-hidden">Tu mensaje</label>
+                  <textarea class="form-control" style="resize:none" id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button class="btn btn-primary mt-1" type="submit"><i class="fas fa-paper-plane me-1"></i>Enviar</button>
+                <div class="form-status text-muted" id="formStatus" aria-live="polite"></div>
+              </form>
+            </div>
+            <div class="col-md-5 contact-info">
+              <h3>Ubicación</h3>
+              <div>Ciudad de Guatemala (GMT-6) · Disponible en remoto</div>
+              <h3>Correo</h3>
+              <div><a href="mailto:jpablo15351@gmail.com">jpablo15351@gmail.com</a></div>
+              <h3>Referencias</h3>
+              <div>Disponibles a solicitud</div>
+              <div class="footer-social mt-1">
+                <a href="https://www.linkedin.com/in/jose-pablo-valiente-montes" title="LinkedIn" target="_blank" rel="noopener" aria-label="Perfil de LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/josepablovaliente" title="GitHub" target="_blank" rel="noopener" aria-label="Perfil de GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /cover -->
+    </div>
+  </div>
+
+  <footer class="site-footer d-print-none">
+    <div class="container text-center">
+      <p class="mb-0">© <span id="footer-year">2026</span> José Pablo Valiente Montes</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top d-print-none" id="backToTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Contacto flotante: izquierda en pantallas grandes, barra inferior en celular -->
+  <div class="floating-contact d-print-none" id="floatingContact">
+    <a class="fc-btn" href="mailto:jpablo15351@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i><span class="fc-label">jpablo15351@gmail.com</span></a>
+    <a class="fc-btn" href="https://www.linkedin.com/in/jose-pablo-valiente-montes" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i><span class="fc-label">LinkedIn</span></a>
+    <a class="fc-btn" href="https://github.com/josepablovaliente" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i><span class="fc-label">josepablovaliente</span></a>
+    <a class="fc-btn" href="cv.pdf" target="_blank" rel="noopener" aria-label="Descargar CV"><i class="fas fa-file-arrow-down"></i><span class="fc-label">Descargar CV</span></a>
+  </div>
+
+  <!-- Navegación por puntos -->
+  <nav class="dot-nav d-print-none" id="dotNav" aria-label="Navegación por secciones">
+    <a href="#about" aria-label="Sobre mí"><span class="dot-tooltip">Sobre mí</span></a>
+    <a href="#skills" aria-label="Aptitudes"><span class="dot-tooltip">Aptitudes</span></a>
+    <a href="#experience" aria-label="Experiencia"><span class="dot-tooltip">Experiencia</span></a>
+    <a href="#education" aria-label="Educación"><span class="dot-tooltip">Educación</span></a>
+    <a href="#certs" aria-label="Certificaciones"><span class="dot-tooltip">Certificaciones</span></a>
+    <a href="#projects" aria-label="Proyectos"><span class="dot-tooltip">Proyectos</span></a>
+    <a href="#volunteer" aria-label="Voluntariado"><span class="dot-tooltip">Voluntariado</span></a>
+    <a href="#contact" aria-label="Contacto"><span class="dot-tooltip">Contacto</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
