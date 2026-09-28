@@ -45,6 +45,22 @@
 </head>
 
 <body id="top">
+  <!-- Pantalla de carga -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Cargando">
+    <div class="page-loader-mark"><span class="page-loader-initials">JPV</span></div>
+  </div>
+  <script>
+    (function () {
+      var loader = document.getElementById('pageLoader');
+      var MIN_MS = 500; // tiempo mínimo visible, aunque la página cargue al instante
+      var start = Date.now();
+      function hide() { loader.classList.add('is-hidden'); setTimeout(function () { loader.remove(); }, 600); }
+      function done() { setTimeout(hide, Math.max(0, MIN_MS - (Date.now() - start))); }
+      if (document.readyState === 'complete') done();
+      else window.addEventListener('load', done);
+      setTimeout(hide, 8000); // por si algún recurso externo tarda demasiado
+    })();
+  </script>
   <div class="scroll-progress d-print-none" id="scrollProgress" role="progressbar" aria-label="Progreso de lectura"></div>
   <a class="skip-to-content" href="#about">Ir al contenido</a>
 
